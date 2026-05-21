@@ -11,8 +11,10 @@ int main() {
         cin>>a;
     }
     t=a;
+    int u;
     while (a>1  && c<t+1){
         if(a%c==0){
+            u++;
             cout<<c;
             a/=c;
             if (a==1)continue;
@@ -22,5 +24,6 @@ int main() {
             c++;
         }
     }
+    if(u)
 }
 
